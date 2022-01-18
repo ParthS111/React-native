@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { SafeAreaView, Text, View } from 'react-native'
-import SignUp from './src/screens/Signup'
+import RootNavigator from './src/Router'
 export default class App extends Component {
   render() {
     return (
-      <View style={{flex:1}}>
-        <SignUp/>
-      </View>
+      <SafeAreaView style={{ flex: 1 }}>
+        <RootNavigator />
+      </SafeAreaView>
     )
   }
 }
